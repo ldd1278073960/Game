@@ -7,4 +7,10 @@ import lombok.Data;
  */
 @Data
 public class GameImg {
+
+    private int gameImgId;
+    private String gameImgUrl;
+    private int gameDetailsId;
+    private int gameImgStatus;
+
 }
