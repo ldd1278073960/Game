@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.one.games.mapper.UserMapper">
+<resultMap id="UserResult" type="com.one.games.domain.entity.User">
+    <id property="userName" column="user_name"/>
+    <result property="userPassword" column="user_password"/>
+    <collection property="userId" column="user_id">
+
+    </collection>
+</resultMap>
+
+    <insert id="save" keyProperty="uid" useGeneratedKeys="true">
+        INSERT INTO user(user_name, user_password)
+        VALUES (#{user.user_name},#{user_user_password})
+    </insert>
+    <select id="entry" resultMap="UserResult">
+        SELECT u.user_name
+        FROM user u
+    </select>
+</mapper>
