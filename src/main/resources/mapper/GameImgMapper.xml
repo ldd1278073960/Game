@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.one.games.mapper.GameImgMapper">
 
-  <resultMap id="BaseResultMap" type="com.one.games.domain.vo.GameImgVo">
+  <resultMap id="GameImgResultMap" type="com.one.games.domain.vo.GameImgVo">
     <id column="game_img_id" jdbcType="INTEGER" property="gameImgId" />
     <result column="game_img_url" jdbcType="VARCHAR" property="gameImgUrl" />
     <result column="game_details_id" jdbcType="INTEGER" property="gameDetailsId" />
