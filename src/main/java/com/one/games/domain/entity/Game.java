@@ -32,5 +32,5 @@ public class Game {
     /**
      * 游戏评分
      */
-    private String gameGrade;
+    private Double gameGrade;
 }

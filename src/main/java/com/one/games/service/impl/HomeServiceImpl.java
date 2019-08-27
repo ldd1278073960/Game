@@ -1,8 +1,10 @@
 package com.one.games.service.impl;
 
+import com.one.games.domain.entity.Game;
 import com.one.games.domain.vo.BannerVo;
 import com.one.games.mapper.BannerMapper;
-import com.one.games.service.BannerService;
+import com.one.games.mapper.GameMapper;
+import com.one.games.service.HomeService;
 import com.one.games.utils.BannerResult;
 import org.springframework.stereotype.Service;
 
@@ -10,13 +12,18 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-public class BannerServiceImpl implements BannerService {
+public class HomeServiceImpl implements HomeService {
 
     @Resource
     private BannerMapper bannerMapper;
 
+    @Resource
+    private GameMapper gameMapper;
 
-
+    /**
+     * 获取轮播图
+     * @return
+     */
     @Override
     public BannerResult getBanner() {
         List<BannerVo> a = bannerMapper.geiBanner("特色轮播");
@@ -34,4 +41,27 @@ public class BannerServiceImpl implements BannerService {
 
         return bannerResult;
     }
+
+    /**
+     * 首页游戏信息
+     * @return
+     */
+    @Override
+    public List<Game> getGameInf() {
+
+        return gameMapper.homeOnlineGameInf();
+
+    }
+
+    /**
+     * 最佳前四游戏
+     * @return
+     */
+    @Override
+    public List<Game> getBastGameOrFrou() {
+
+        return gameMapper.bastGame();
+    }
+
+
 }

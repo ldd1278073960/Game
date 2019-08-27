@@ -11,6 +11,7 @@
   </resultMap>
 
 
+
   <select id="byFindGameImgVo" resultMap="BaseResultMap">
 
     select gi.game_img_id,gi.game_img_url
