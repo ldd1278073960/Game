@@ -25,7 +25,12 @@ public class Game {
     private Integer gameTypeId;
 
     /**
-     * 游戏图片的一对一查询
+     * 游戏介绍
      */
-    private GameImg gameImg;
+    private String gameDetails;
+
+    /**
+     * 游戏评分
+     */
+    private Double gameGrade;
 }
