@@ -1,5 +1,8 @@
 package com.one.games.domain.entity;
 
+import lombok.Data;
+
+@Data
 public class GameConsult {
     /**
      * 游戏咨询id
@@ -21,35 +24,5 @@ public class GameConsult {
      */
     private Integer gameId;
 
-    public Integer getGameConsultId() {
-        return gameConsultId;
-    }
 
-    public void setGameConsultId(Integer gameConsultId) {
-        this.gameConsultId = gameConsultId;
-    }
-
-    public String getGameConsultTitle() {
-        return gameConsultTitle;
-    }
-
-    public void setGameConsultTitle(String gameConsultTitle) {
-        this.gameConsultTitle = gameConsultTitle;
-    }
-
-    public String getGameConsultConte() {
-        return gameConsultConte;
-    }
-
-    public void setGameConsultConte(String gameConsultConte) {
-        this.gameConsultConte = gameConsultConte;
-    }
-
-    public Integer getGameId() {
-        return gameId;
-    }
-
-    public void setGameId(Integer gameId) {
-        this.gameId = gameId;
-    }
 }

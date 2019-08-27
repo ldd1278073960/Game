@@ -1,5 +1,8 @@
 package com.one.games.domain.entity;
 
+import lombok.Data;
+
+@Data
 public class GameType {
     /**
      * 游戏类型ID
@@ -16,27 +19,5 @@ public class GameType {
      */
     private Integer gameTypeStatus;
 
-    public Integer getGameTypeId() {
-        return gameTypeId;
-    }
 
-    public void setGameTypeId(Integer gameTypeId) {
-        this.gameTypeId = gameTypeId;
-    }
-
-    public String getGameTypeName() {
-        return gameTypeName;
-    }
-
-    public void setGameTypeName(String gameTypeName) {
-        this.gameTypeName = gameTypeName;
-    }
-
-    public Integer getGameTypeStatus() {
-        return gameTypeStatus;
-    }
-
-    public void setGameTypeStatus(Integer gameTypeStatus) {
-        this.gameTypeStatus = gameTypeStatus;
-    }
 }
