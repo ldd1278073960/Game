@@ -5,7 +5,6 @@
   <resultMap id="BaseResultMap" type="com.one.games.domain.vo.GameImgVo">
     <id column="game_img_id" jdbcType="INTEGER" property="gameImgId" />
     <result column="game_img_url" jdbcType="VARCHAR" property="gameImgUrl" />
-
     <result column="game_details_id" jdbcType="INTEGER" property="gameDetailsId" />
     <result column="game_img_status" jdbcType="INTEGER" property="gameImgStatus" />
     <result column="game_id" jdbcType="INTEGER" property="gameId" />
