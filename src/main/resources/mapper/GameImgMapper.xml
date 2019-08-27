@@ -10,8 +10,5 @@
     <result column="game_id" jdbcType="INTEGER" property="gameId" />
   </resultMap>
 
-  <select id="findByGameImg" resultMap="BaseResultMap">
-
-  </select>
 
 </mapper>
