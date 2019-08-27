@@ -7,4 +7,5 @@ import lombok.Data;
  */
 @Data
 public class Game {
+    private Integer gameId;
 }
