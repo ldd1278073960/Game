@@ -24,4 +24,9 @@ public class Banner {
      */
     private String bannerImg;
 
+    /**
+     * 是否启用
+     */
+    private Integer bannerStatus;
+
 }

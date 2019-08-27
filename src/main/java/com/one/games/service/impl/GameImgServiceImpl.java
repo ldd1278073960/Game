@@ -5,6 +5,7 @@ import com.one.games.domain.vo.GameImgVo;
 import com.one.games.mapper.GameImgMapper;
 import com.one.games.service.GameImgService;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
