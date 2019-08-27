@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
+ * 图片画廊
  * @author Administrator
  */
 @RestController
