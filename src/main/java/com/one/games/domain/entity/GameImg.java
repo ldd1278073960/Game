@@ -1,16 +1,55 @@
 package com.one.games.domain.entity;
 
-import lombok.Data;
-
-/**
- * 游戏图片
- */
-@Data
 public class GameImg {
+    /**
+    * 游戏图片id
+    */
+    private Integer gameImgId;
 
-    private int gameImgId;
+    /**
+    * 游戏图片地址
+    */
     private String gameImgUrl;
-    private int gameDetailsId;
-    private int gameImgStatus;
 
+    /**
+    * 游戏配置id
+    */
+    private Integer gameDetailsId;
+
+    /**
+    * 是否使用,1为使用,0为不使用
+    */
+    private Integer gameImgStatus;
+
+    public Integer getGameImgId() {
+        return gameImgId;
+    }
+
+    public void setGameImgId(Integer gameImgId) {
+        this.gameImgId = gameImgId;
+    }
+
+    public String getGameImgUrl() {
+        return gameImgUrl;
+    }
+
+    public void setGameImgUrl(String gameImgUrl) {
+        this.gameImgUrl = gameImgUrl;
+    }
+
+    public Integer getGameDetailsId() {
+        return gameDetailsId;
+    }
+
+    public void setGameDetailsId(Integer gameDetailsId) {
+        this.gameDetailsId = gameDetailsId;
+    }
+
+    public Integer getGameImgStatus() {
+        return gameImgStatus;
+    }
+
+    public void setGameImgStatus(Integer gameImgStatus) {
+        this.gameImgStatus = gameImgStatus;
+    }
 }
