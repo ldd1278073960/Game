@@ -4,6 +4,9 @@ import com.one.games.domain.vo.GameImgVo;
 
 import java.util.List;
 
+/**
+ * @author Administrator
+ */
 public interface GameImgService {
 
     /**

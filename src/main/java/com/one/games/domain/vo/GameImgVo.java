@@ -9,7 +9,7 @@ import java.util.List;
  * @author Administrator
  */
 @Data
-public class GameImgVo {
+public class GameImgVo extends GameImg {
 
     List<GameImg> listGameImgVo;
 

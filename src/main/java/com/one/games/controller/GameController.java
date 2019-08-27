@@ -5,6 +5,7 @@ import com.one.games.service.GameImgService;
 import com.one.games.utils.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -19,6 +20,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
+@RequestMapping("/gameImg")
 public class GameController {
 
     @Resource
@@ -28,9 +30,8 @@ public class GameController {
      * 图片画廊
      * @return
      */
-    @GetMapping("/gameImgGallery")
+    @GetMapping("/Gallery")
     public Result gameImgGallery(){
-
         try{
             List<GameImgVo> byGameImg = gameImgService.findByGameImg();
             return Result.success(byGameImg);

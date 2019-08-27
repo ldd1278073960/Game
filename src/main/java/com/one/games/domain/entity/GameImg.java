@@ -1,5 +1,11 @@
 package com.one.games.domain.entity;
 
+import lombok.Data;
+
+/**
+ * @author Administrator
+ */
+@Data
 public class GameImg {
     /**
      * 游戏图片id
