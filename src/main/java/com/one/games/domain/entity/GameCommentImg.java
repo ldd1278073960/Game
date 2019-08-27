@@ -2,9 +2,22 @@ package com.one.games.domain.entity;
 
 import lombok.Data;
 
-/**
- * 论坛图片表
- */
 @Data
 public class GameCommentImg {
+    /**
+     * 论坛图片id
+     */
+    private Integer gameCommentImgId;
+
+    /**
+     * 论坛id
+     */
+    private Integer gameCommentId;
+
+    /**
+     * 论坛图片名字
+     */
+    private String gameCommentName;
+
+
 }

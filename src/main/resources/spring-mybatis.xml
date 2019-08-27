@@ -8,13 +8,18 @@
 
     <bean class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+<<<<<<< HEAD
         <property name="typeAliasesPackage" value="com.vip.ssm1.domain.entity"/>
         <property name="mapperLocations" value="classpath:mappers/**/*.xml"/>
+=======
+        <property name="typeAliasesPackage" value="com.one.games.domain.entity"/>
+        <property name="mapperLocations" value="classpath:mapper/**/*.xml"/>
+>>>>>>> origin/bev
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.vip.ssm1.mapper"/>
+        <property name="basePackage" value="com.one.games.mapper"/>
     </bean>
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">

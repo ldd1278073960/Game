@@ -4,16 +4,12 @@ import lombok.Data;
 
 import java.util.Date;
 
-/**
- * @author k&d
- * @Date 2019/8/27 17:22
- */
 @Data
 public class GameDetails {
     /**
      * 游戏详情ID
      */
-    private int gameDetailsId;
+    private Integer gameDetailsId;
 
     /**
      * 游戏概述
@@ -44,5 +40,6 @@ public class GameDetails {
      * 游戏ID-外键
      */
     private Integer gameId;
+
 
 }
