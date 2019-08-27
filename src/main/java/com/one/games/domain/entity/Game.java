@@ -24,4 +24,13 @@ public class Game {
      */
     private Integer gameTypeId;
 
+    /**
+     * 游戏介绍
+     */
+    private String gameDetails;
+
+    /**
+     * 游戏评分
+     */
+    private String gameGrade;
 }
