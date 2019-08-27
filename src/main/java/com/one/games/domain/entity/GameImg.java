@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 游戏图片
+ * @author Administrator
  */
 @Data
 public class GameImg {

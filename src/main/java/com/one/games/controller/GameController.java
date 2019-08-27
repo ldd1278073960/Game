@@ -15,7 +15,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
-public class Game {
+public class GameController {
 
     @Resource
     GameImgService gameImgService;
