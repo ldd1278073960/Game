@@ -2,23 +2,23 @@ package com.one.games.domain.entity;
 
 public class GameComment {
     /**
-    * 游戏评论表的id
-    */
+     * 游戏评论表的id
+     */
     private Integer gameCommentId;
 
     /**
-    * 游戏评论的内容
-    */
+     * 游戏评论的内容
+     */
     private String gameCommentContent;
 
     /**
-    * 用户ID-外键
-    */
+     * 用户ID-外键
+     */
     private Integer userId;
 
     /**
-    * 游戏ID-外键
-    */
+     * 游戏ID-外键
+     */
     private Integer gameId;
 
     public Integer getGameCommentId() {

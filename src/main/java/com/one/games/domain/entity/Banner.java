@@ -2,24 +2,23 @@ package com.one.games.domain.entity;
 
 public class Banner {
     /**
-    * 轮播图id
-    */
+     * 轮播图id
+     */
     private Integer bannerId;
 
     /**
-    * 轮播类型
-    */
+     * 轮播类型
+     */
     private String bannerType;
 
     /**
-    * 游戏ID-外键
-    */
+     * 游戏ID-外键
+     */
     private Integer gameId;
 
     /**
-    * 轮播图片
-
-    */
+     * 轮播图片
+     */
     private String bannerImg;
 
     public Integer getBannerId() {

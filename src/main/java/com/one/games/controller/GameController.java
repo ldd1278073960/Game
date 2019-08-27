@@ -1,6 +1,6 @@
 package com.one.games.controller;
 
-import com.one.games.domain.entity.vo.GameImgVo;
+import com.one.games.domain.vo.GameImgVo;
 import com.one.games.service.GameImgService;
 import com.one.games.utils.Result;
 import lombok.extern.slf4j.Slf4j;

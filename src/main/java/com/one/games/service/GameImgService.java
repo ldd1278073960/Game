@@ -1,6 +1,6 @@
 package com.one.games.service;
 
-import com.one.games.domain.entity.vo.GameImgVo;
+import com.one.games.domain.vo.GameImgVo;
 
 import java.util.List;
 

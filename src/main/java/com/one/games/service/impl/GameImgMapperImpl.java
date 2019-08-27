@@ -1,7 +1,7 @@
 package com.one.games.service.impl;
 
 
-import com.one.games.domain.entity.vo.GameImgVo;
+import com.one.games.domain.vo.GameImgVo;
 import com.one.games.service.GameImgService;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.one.games.mapper;
 
-import com.one.games.domain.entity.GameImg;import com.one.games.domain.entity.vo.GameImgVo;import java.util.List;
+import com.one.games.domain.entity.GameImg;import com.one.games.domain.vo.GameImgVo;import java.util.List;
 
 public interface GameImgMapper {
     int deleteByPrimaryKey(Integer gameImgId);
