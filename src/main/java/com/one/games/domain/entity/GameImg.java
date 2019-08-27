@@ -2,10 +2,6 @@ package com.one.games.domain.entity;
 
 import lombok.Data;
 
-/**
- * 游戏图片
- * @author Administrator
- */
 @Data
 public class GameImg {
     /**
@@ -28,8 +24,4 @@ public class GameImg {
     */
     private Integer gameImgStatus;
 
-    /**
-     * 与game外键
-     */
-    private Integer gameId;
 }

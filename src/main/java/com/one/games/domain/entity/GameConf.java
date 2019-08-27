@@ -1,6 +1,5 @@
 package com.one.games.domain.entity;
 
-
 import lombok.Data;
 
 @Data
@@ -65,8 +64,4 @@ public class GameConf {
     */
     private String gameConfLowInter;
 
-    /**
-     * game外键
-     */
-    private Integer gameId;
 }

@@ -1,5 +1,8 @@
 package com.one.games.domain.entity;
 
+import lombok.Data;
+
+@Data
 public class Banner {
     /**
     * 轮播图id
@@ -22,35 +25,4 @@ public class Banner {
     */
     private String bannerImg;
 
-    public Integer getBannerId() {
-        return bannerId;
-    }
-
-    public void setBannerId(Integer bannerId) {
-        this.bannerId = bannerId;
-    }
-
-    public String getBannerType() {
-        return bannerType;
-    }
-
-    public void setBannerType(String bannerType) {
-        this.bannerType = bannerType;
-    }
-
-    public Integer getGameId() {
-        return gameId;
-    }
-
-    public void setGameId(Integer gameId) {
-        this.gameId = gameId;
-    }
-
-    public String getBannerImg() {
-        return bannerImg;
-    }
-
-    public void setBannerImg(String bannerImg) {
-        this.bannerImg = bannerImg;
-    }
 }

@@ -1,5 +1,8 @@
 package com.one.games.domain.entity;
 
+import lombok.Data;
+
+@Data
 public class Navigation {
     /**
     * 导航栏id
@@ -16,27 +19,4 @@ public class Navigation {
     */
     private Integer navgationStatus;
 
-    public Integer getNavigationId() {
-        return navigationId;
-    }
-
-    public void setNavigationId(Integer navigationId) {
-        this.navigationId = navigationId;
-    }
-
-    public String getNavgationName() {
-        return navgationName;
-    }
-
-    public void setNavgationName(String navgationName) {
-        this.navgationName = navgationName;
-    }
-
-    public Integer getNavgationStatus() {
-        return navgationStatus;
-    }
-
-    public void setNavgationStatus(Integer navgationStatus) {
-        this.navgationStatus = navgationStatus;
-    }
 }
