@@ -5,8 +5,8 @@ package com.one.games.controller;
 import com.one.games.domain.entity.GameDetails;
 import com.one.games.domain.entity.User;
 import com.one.games.service.GameDetailService;
-import com.one.games.service.UserService;
 
+import com.one.games.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.util.List;
+
 
 /**
  * @author k&d
@@ -27,12 +27,13 @@ import java.util.List;
 @Slf4j
 @RestController()
 @RequestMapping("/api")
-public class GamesController {
+public class UserController {
 
     @Resource
     UserService userService;
     @Resource
     GameDetailService gameDetailService;
+
     /**
      * 登录
      * @param username
@@ -65,8 +66,7 @@ public class GamesController {
      * @param user
      * @return
      */
-    @RequestMapping("/regsiter")
-   /* @GetMapping("/register")*/
+    @RequestMapping(value = "/login" ,method=RequestMethod.POST)
     public String regsiter(User user) {
         try {
             String username = user.getUsername();
@@ -83,11 +83,10 @@ public class GamesController {
         return  null;
     }
     @GetMapping("/show")
-    public List<GameDetails>  show(int gameDetailsId) {
+    public GameDetails  show(int gameDetailsId) {
         try {
             if (gameDetailsId!=0){
-                List<GameDetails>  gameDetails = gameDetailService.showDetails(gameDetailsId);
-                return gameDetails;
+                return gameDetailService.showDetails(gameDetailsId);
             }
         } catch (Exception e) {
             e.printStackTrace();

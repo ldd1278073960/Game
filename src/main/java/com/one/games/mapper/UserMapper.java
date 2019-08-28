@@ -1,9 +1,8 @@
 package com.one.games.mapper;
 
-<<<<<<< HEAD
+
 import com.one.games.domain.entity.User;
 import org.apache.ibatis.annotations.Param;
-
 
 /**
  * @author k&d
@@ -31,9 +30,4 @@ public interface UserMapper {
 
     User findByUserName(String username);
 }
-=======
 
-public interface UserMapper {
-
-}
->>>>>>> origin/bev

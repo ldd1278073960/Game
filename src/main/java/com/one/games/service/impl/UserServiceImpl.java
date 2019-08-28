@@ -15,9 +15,9 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @Service("userService")
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Resource
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     /**
      * 添加用户
@@ -25,12 +25,11 @@ public class UserServiceImpl implements UserService{
      */
     @Override
     public void register(User user) {
-        userMapper.addUser(user);
-
+       userMapper.addUser(user);
     }
 
     /**
-     * 用户登录
+     *
      * @param username
      * @param userPassword
      */
@@ -38,7 +37,6 @@ public class UserServiceImpl implements UserService{
     public User login(String username, String userPassword) {
        return userMapper.findByUserNameAndPassword(username,userPassword);
     }
-
     /**
      * 查找用户
      * @param username

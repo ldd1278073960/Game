@@ -6,7 +6,6 @@ import com.one.games.service.GameDetailService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * @author k&d
@@ -19,8 +18,8 @@ public class GameDetailImpl implements GameDetailService {
     GameDetailsMapper gameDetailsMapper;
 
     @Override
-    public List<GameDetails> showDetails(int gameDetailsId) {
-        List<GameDetails> gameDetails = gameDetailsMapper.selectById(gameDetailsId);
+    public GameDetails showDetails(int gameDetailsId) {
+        GameDetails gameDetails = gameDetailsMapper.findById(gameDetailsId);
         return gameDetails;
     }
 }

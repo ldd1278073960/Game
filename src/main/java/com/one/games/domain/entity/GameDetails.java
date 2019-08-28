@@ -1,10 +1,12 @@
 package com.one.games.domain.entity;
 
-import lombok.Data;
-
 import java.util.Date;
 
-@Data
+/**
+ * @author k&d
+ * @Date 2019/8/27 22:33
+ */
+
 public class GameDetails {
     /**
      * 游戏详情ID
@@ -41,5 +43,59 @@ public class GameDetails {
      */
     private Integer gameId;
 
+    public Integer getGameDetailsId() {
+        return gameDetailsId;
+    }
 
+    public void setGameDetailsId(Integer gameDetailsId) {
+        this.gameDetailsId = gameDetailsId;
+    }
+
+    public String getGameDetailsSum() {
+        return gameDetailsSum;
+    }
+
+    public void setGameDetailsSum(String gameDetailsSum) {
+        this.gameDetailsSum = gameDetailsSum;
+    }
+
+    public String getGameDetailsConf() {
+        return gameDetailsConf;
+    }
+
+    public void setGameDetailsConf(String gameDetailsConf) {
+        this.gameDetailsConf = gameDetailsConf;
+    }
+
+    public Date getGameDetailsCretime() {
+        return gameDetailsCretime;
+    }
+
+    public void setGameDetailsCretime(Date gameDetailsCretime) {
+        this.gameDetailsCretime = gameDetailsCretime;
+    }
+
+    public Date getGameDetailsTime() {
+        return gameDetailsTime;
+    }
+
+    public void setGameDetailsTime(Date gameDetailsTime) {
+        this.gameDetailsTime = gameDetailsTime;
+    }
+
+    public String getGameDetailsDownl() {
+        return gameDetailsDownl;
+    }
+
+    public void setGameDetailsDownl(String gameDetailsDownl) {
+        this.gameDetailsDownl = gameDetailsDownl;
+    }
+
+    public Integer getGameId() {
+        return gameId;
+    }
+
+    public void setGameId(Integer gameId) {
+        this.gameId = gameId;
+    }
 }
